@@ -58,14 +58,26 @@ Toegepast op een voorbeeld zoals 12 uur, 31 minuten en 10 seconden ziet het er a
 Merk op dat we als maximum aantal uren 12 in plaats van 24 gebruiken, een analoge klok gebruikt namelijk maar 12 standen om de uren uit te drukken. 
 
 Door gebruik te maken van deze berekeningen, staat de gleuf op deze locaties wanneer de LED-lichten branden.
-<ul>
-    <li>Stand gleuf voor 12 uur: <img src="embed/0.png" alt="Stand schijf voor 12 uur." title="Stand schijf voor 12 uur."></img>
-    <li>Stand gleuf voor 31 minuten: <img src="embed/186.png" alt="Stand schijf voor 31 minuten." title="Stand schijf voor 31 minuten."></img>
-    <li>Stand gleuf voor 10 seconden: <img src="embed/60.png" alt="Stand schijf voor 10 seconden." title="Stand schijf voor 10 seconden."></img>
 
-</ul>
+<table>
+    <tr>
+        <td>
+            <img alt="Stand schijf voor 12 uur." src="embed\0.png"/>
+        </td>
+        <td>
+            <img alt="Stand schijf voor 31 minuten." src="embed\186.png"/>
+        </td>
+        <td>
+            <img alt="Stand schijf voor 10 seconden." src="embed\60.png"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Stand gleuf voor 12 uur.</td>
+        <td>Stand gleuf voor 31 minuten.</td>
+        <td>Stand gleuf voor 10 seconden.</td>
+    </tr>
+</table>
 
-<!-- Toevoegen link timers & interrupts? -->
 De tijd voor een volledige cyclus van de schijf wordt uitgedrukt in ticks. Ticks worden gebruikt als tijdseenheid in de CPU van een computer. 
 
 Deze berekening geeft ons dus een aantal ticks dat we moeten wachten voordat de smalle gleuf in een positie staat die overeenkomt met de positie van een analoge wijzer die het huidig aantal seconden, minuten of uren aangeeft. Hierdoor kunnen we de LED-lichten exact timen om deze te laten branden en vervolgens onmiddelijk weer uit te schakelen. Indien we de LED-lichten niet onmiddelijk zouden uitschakelen, zou correct timen weinig nut hebben. 
